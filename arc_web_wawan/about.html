@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wawancara ARC</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;379;400;500;600;700&display=swap" rel="stylesheet">    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <img src="assets/logo.png" class="logo">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="wawancara1.html">WAWANCARA 1</a></li>
+                <li><a href="wawancara2.html">WAWANCARA 2</a></li>
+                <li><a href="https://www.linkedin.com/company/arc-itb/about/">ARC</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <div class="left-col">
+                <h1>Tentang Saya</h1>
+            </div>
+        </div> 
+        <div class="deskripsi-about">
+            <p class="p1">
+                Halo, aku Faza Muhandisa Asro NIM 16520355, 
+                Cakru21 ARC dari STEI 2020.
+                Hobi aku baca buku dan futsal. 
+                Alasan ikut ARC biar ada alasan, teman, dan lingkungan yang
+                mendukung untuk belajar, soalnya
+                kalau enggak, jadinya ga belajar-belajar, hehe. 
+            </p>
+            <br>
+            <br>
+            <p class="p2">
+                Kesibukan sekarang cuma kuliah sama bucin. Yaa sambil belajar coding dikit-dikit.
+                <br>
+                <br>
+                Kalian bisa ikuti aku di <a href="https://www.instagram.com/fazaasro">Instagram</a> atau jalin koneksi di
+                <a href="https://www.linkedin.com/in/fazaasro">LinkedIn!</a>
+            </p>
+        </div>
+    </div>
+    <audio id="mySong">
+        <source src="assets/song.mp3" type="audio/mp3">
+    </audio>
+<script>
+        var mySong = document.getElementById("mySong");
+        var icon = document.getElementById("icon");
+
+        icon.onclick = function(){
+            if (mySong.paused) {
+                mySong.play();
+                icon.src = "assets/pause.png"
+            }else{
+                mySong.pause();
+                icon.src = "assets/play.png"
+            }
+        }
+</script>
+    
+</body>
+</html>
